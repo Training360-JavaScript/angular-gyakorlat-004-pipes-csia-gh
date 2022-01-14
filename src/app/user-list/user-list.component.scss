@@ -1,6 +1,9 @@
-
 /**
   A táblázat fejléc celláin (th) alkalmazd a következő stílusokat:
   1. Ha az egeret fölé viszik, legyen a háttérszíne halványszürke.
   2. Ha az egeret fölé viszik, jelenjen meg a mutató kurzor.
 */
+th:not(.show):hover {
+  background-color: #d3d0d0;
+  cursor: pointer;
+}
