@@ -28,9 +28,7 @@
          -->
         <tr
           *ngFor="
-            let user of users
-              | filter: phraseString:columnKey
-              | sorter: columnKey
+            let user of users | filter: phraseString:'name' | sorter: columnKey
           "
         >
           <td>{{ user.id }}</td>
